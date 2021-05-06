@@ -1,0 +1,77 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}
+    Hakkımızda
+{% endblock %}
+{% block descrpition %}
+    Yönetişim; 2013’ten beri apartman, site, rezidans ve iş merkezi yöneticilerinin hayatını kolaylaştıran ve verimlilik artıran yazılım çözümleri geliştirmektedir.
+{% endblock %}
+{% block css %}
+    <style>
+        .contact-img {
+            background-image: linear-gradient(180deg, #011936 0%, rgba(1, 25, 54, 0.1) 48.96%, rgba(1, 25, 54, 0) 100%), url("{% static 'img/hakkimizda.jpg'%}");
+            background-repeat: no-repeat;
+            background-size: 100% 848px;
+            margin: 0px auto;
+            box-sizing: border-box;
+            top: 0;
+            width: 100%;
+            height: 560px;
+            background-position: center;
+
+        }
+        .down-line:hover{
+            border-bottom: 2px solid #F5A623;
+            padding-bottom: 5px;
+        }
+        @media (min-width: 350px) and (max-width: 767px){
+            .contact-img {
+                width: 100%;
+                height: 300px !important;
+                background-size: 100% 322px;}
+        }
+    </style>
+{% endblock css %}
+
+{% block content %}
+
+    <div class="contact-img">
+
+    </div>
+    <div class="btn-topup">
+        <a href="#"><img style="width:100%;" src="{% static 'img/up-arrow.png'%}"></a>
+    </div>
+    <!----------------------------------------BLOCK------------------------------------------------------>
+<div class="container bc">
+    <div class="row">
+        <div class="col-lg-12 title bc"style="margin-top:50px;">
+            <h1 class="bc" style="color:#011936">Yönetişim'e Hoşgeldiniz</h1>
+            <span class="title-line bc" style="color:#011936"></span>
+        </div>
+        <div class="col-12 flt bc">
+            <div class="us bc">
+                <p style="color:#011936">2013 yılında kurulan Yönetişim Teknoloji ve Bilişim Sistemleri A.Ş., gayrimenkul ve tesis yönetimi alanında geliştirdiği yazılım projeleri ile faaliyetini sürdürmektedir. Apartman, site, rezidans, plaza, iş merkezi gibi toplu yaşam alanlarının, hem bireysel hem de profesyonel ölçekteki yönetimleri için verim artışı sağlar, toplu yapıların yöneticilerinin ve yönetim profesyonellerinin iş yüklerini azaltır ve yönetim süreçlerini şeffaflaştırır.
+                <br>
+                <br>
+                2017 yılında yenilenen Yönetişim yazılımı uzman ürün geliştirme ekibi tarafından; sektör profesyonelleri, mali müşavirler ve hukuk danışmanlarının desteğiyle sürekli geliştirilmektedir. Yönetişim; tesis yönetim dünyasının güncel ihtiyaçlarına, öncelikle bünyesindeki binlerce kullanıcının sağladığı geri dönüşler ışığında, hızlı, kullanışlı ve etkin çözümler üretmektedir.</p>
+            </div>
+
+        </div>
+        <div class="col-sm-12 mc">
+            <div class="col-lg-4 flt bc ht">
+               <a href="#neden-yonetisim" style="color:#011936"><h1 class="down-line">Neden Yönetişim</h1>
+            </div>
+            <div class="col-lg-4 flt bc ht">
+               <a href="#nasil-kullanilir" style="color:#011936"><h1 class="down-line">Yönetişim nasıl kullanılır?</h1></a>
+            </div>
+            <div class="col-lg-4 flt bc ht">
+                <a href="#" style="color:#011936"><h1 class="down-line">Güncel İçerikler</h1></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
