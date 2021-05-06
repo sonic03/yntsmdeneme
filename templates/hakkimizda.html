@@ -17,7 +17,7 @@
             top: 0;
             width: 100%;
             height: 560px;
-            background-position:center;
+            background-position: center;
 
         }
         .down-line:hover{
@@ -59,13 +59,13 @@
         </div>
         <div class="col-sm-12 mc">
             <div class="col-lg-4 flt bc ht">
-               <a href="#neden-yonetisim" style="color:#011936"><h1 class="down-line">Neden Yönetişim</h1>
+               <a href="{% url 'main_page' %}#neden-yonetisim" style="color:#011936"><h1 class="down-line">Neden Yönetişim</h1>
             </div>
             <div class="col-lg-4 flt bc ht">
-               <a href="#nasil-kullanilir" style="color:#011936"><h1 class="down-line">Yönetişim nasıl kullanılır?</h1></a>
+               <a href="{% url 'main_page' %}#nasil-kullanilir" style="color:#011936"><h1 class="down-line">Yönetişim nasıl kullanılır?</h1></a>
             </div>
             <div class="col-lg-4 flt bc ht">
-                <a href="#" style="color:#011936"><h1 class="down-line">Güncel İçerikler</h1></a>
+                <a href="{% url 'posts' %}" style="color:#011936"><h1 class="down-line">Güncel İçerikler</h1></a>
             </div>
         </div>
     </div>
