@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django import views
 from django.conf.urls import url
+from django.urls import path
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
@@ -26,7 +27,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
     url(r'^', TemplateView.as_view(template_name='index.html'), name='index'),
-    url(r'^hakkimizda', views.hakkimizda, name='hakkimizda'),
+    path('hakkimizda', views.hakkimizda, name='hakkimizda'),
     
 
 ]
