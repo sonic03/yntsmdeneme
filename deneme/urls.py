@@ -20,13 +20,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views import defaults as default_views
 from django.views.generic import RedirectView, TemplateView
-from sss.views import hakkimizda
+from sss import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
     url(r'^', TemplateView.as_view(template_name='index.html'), name='index'),
-    url(r'^hakkimizda', hakkimizda, name='hakkimizda'),
+    url(r'^hakkimizda', views.hakkimizda, name='hakkimizda'),
     
 
 ]
