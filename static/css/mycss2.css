@@ -88,9 +88,11 @@
 .navigator ul li a:hover {
     border-bottom: 3px solid #F5A623;
 }
-#ulmainpage{
+
+#ulmainpage {
     display: none;
 }
+
 .shw {
     display: block;
 }
@@ -204,9 +206,11 @@
 .lowesliderout {
     display: none;
 }
-.op{
+
+.op {
     object-position: 0 -50px;
 }
+
 .slider .slayt img {
     width: 64%;
     height: 560px;
@@ -244,7 +248,7 @@
     padding-bottom: 10px;
     margin-left: 6%;
     z-index: 9;
-    color:white !important;
+    color: white !important;
 }
 
 .slider-text-mobile {
@@ -255,7 +259,7 @@
 .slider-text h1 {
     font-size: 50px;
     width: 90%;
-    color:white!important;
+    color: white!important;
 }
 
 .slider-text p {
@@ -263,7 +267,7 @@
     padding-top: 30px;
     width: 100%;
     line-height: 31px;
-    color:white!important;
+    color: white!important;
 }
 
 .sliderbtn {
@@ -509,7 +513,6 @@
     font-size: 40px;
     line-height: 136.99%;
     letter-spacing: 0.0648428px;
-
     box-sizing: border-box;
 }
 
@@ -563,7 +566,6 @@
     line-height: 19px;
     letter-spacing: 0.058926px;
     margin-left: 4%;
-
 }
 
 .sec-slider-innertext .sec-slider-text a {
@@ -604,7 +606,7 @@
 .sec-slider-img img {
     width: 100%;
     float: left;
-    margin-top:-35px;
+    margin-top: -35px;
 }
 
 .btn-teklif {
@@ -654,8 +656,8 @@
 }
 
 .nkimg img {
-    width:51%;
-    margin-left:267px;
+    width: 51%;
+    margin-left: 267px;
 }
 
 .nybox-out {
@@ -783,7 +785,6 @@
     text-transform: capitalize;
     text-align: center;
     margin-top: 4%;
-
     text-align: center;
 }
 
@@ -989,7 +990,7 @@ h4 {
     font-size: 20px;
     width: 60%;
     margin-bottom: -5px;
-    color:white;
+    color: white;
 }
 
 .footer-ff-out {
@@ -1102,7 +1103,8 @@ h4 {
     font-family: 'Avenir Book';
     font-weight: 800;
 }
-.lines{
+
+.lines {
     display: block;
     width: 100%;
     height: 79px;
@@ -1110,9 +1112,8 @@ h4 {
     top: -56px;
     z-index: 0;
     overflow: hidden;
-
-
 }
+
 .slider-item-line {
     width: 431px;
     height: 3px;
@@ -1124,8 +1125,8 @@ h4 {
     display: inline-block;
     float: left;
     position: absolute;
-    left:0;
-    bottom:0;
+    left: 0;
+    bottom: 0;
 }
 
 .slider-item-line-green {
@@ -1136,7 +1137,7 @@ h4 {
     display: inline-block;
     float: left;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     right: 0;
 }
 
@@ -1151,8 +1152,8 @@ h4 {
     position: absolute;
     margin-left: 0px !important;
     margin-top: 0px !important;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
 .slider-item-line-green-top {
@@ -1165,8 +1166,8 @@ h4 {
     position: absolute;
     margin-left: 0px !important;
     margin-top: 0px !important;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
 }
 
 .slider-item-line-green-left {
@@ -1435,7 +1436,6 @@ h4 {
     text-decoration: none;
     cursor: pointer;
     color: #011936;
-
 }
 
 .panel-inner-box {
@@ -1443,8 +1443,6 @@ h4 {
     width: 95%;
     margin-top: 7px;
     float: left;
-
-
 }
 
 .panel-inner-box img {
@@ -1586,7 +1584,7 @@ h4 {
     height: 10.07px;
     margin-top: 5px;
     margin-left: 45%;
-    background: #011936 ;
+    background: #011936;
     border-radius: 12.5859px;
     display: inline-block;
     float: left;
@@ -1785,6 +1783,7 @@ h4 {
 .ta {
     height: 946px;
 }
+
 label {
     margin-left: 130px !important;
     margin-top: 20px !important;
@@ -1795,7 +1794,8 @@ label {
     font-size: 20px !important;
     z-index: 9999;
 }
-.input-h{
+
+.input-h {
     height: 109px;
 }
 
@@ -1843,7 +1843,6 @@ input:focus {
     border: 3px solid black;
 }
 
-
 .maps {
     width: 95%;
     height: 410px;
@@ -1874,7 +1873,6 @@ input:focus {
     font-size: 28px;
     line-height: 48px;
     letter-spacing: 0.058926px;
-
 }
 
 .lowerinner p {
@@ -1885,7 +1883,6 @@ input:focus {
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 0.058926px;
-
     margin-left: 20px;
 }
 
@@ -2084,41 +2081,49 @@ h3 {
     margin-right: 5px;
     float: right;
 }
-.modal{
-    font-family: 'Avenir';
 
+.modal {
+    font-family: 'Avenir';
 }
-.modal h5{
+
+.modal h5 {
     font-size: 32px;
     font-family: 'Avenir';
 }
-.modal p{
+
+.modal p {
     font-size: 16px;
     line-height: 22px;
 }
-.modal-accept{
+
+.modal-accept {
     padding-left: 16%!important;
     font-size: 20px!important;
 }
-.modal-footer{
-    border-top:none
+
+.modal-footer {
+    border-top: none
 }
-.modal-header{
+
+.modal-header {
     border-bottom: none;
 }
 
-.up-panel-p{
-    width:100%;
-    font-size:20px;
-    text-align:center;
-    margin:3% auto;
-    float:left;
+.up-panel-p {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 3% auto;
+    float: left;
     line-height: 30px;
 }
-.c-content-out{
+
+.c-content-out {
     padding-bottom: 150px;
     margin-top: 50px;
- }
+}
+
+
 /* ---------------Mobil-CSS------------------ */
 
 @media (min-width: 350px) and (max-width: 767px) {
@@ -2230,7 +2235,6 @@ h3 {
         width: 100%;
         height: 300px;
         overflow: hidden;
-
     }
     .slider .slayt img {
         width: 180%;
@@ -2248,18 +2252,18 @@ h3 {
         width: 80%;
         height: 20%;
         margin-top: -176px;
-        display:none;
+        display: none;
     }
     .slider-text p {
         display: none;
     }
-    .slider-text h1{
-        color:#011936;
+    .slider-text h1 {
+        color: #011936;
         font-weight: 800;
         display: none;
     }
-    .up-panel-p{
-        font-size:14px;
+    .up-panel-p {
+        font-size: 14px;
         line-height: 19px;
     }
     .btn-slide-on {
@@ -2322,7 +2326,6 @@ h3 {
         margin-top: -4%;
         width: 100%;
         height: 25px;
-
     }
     .control {
         display: block;
@@ -2373,9 +2376,9 @@ h3 {
         text-align: left;
         width: 50%;
     }
-    .c-content-out{
+    .c-content-out {
         margin-top: -6px;
-        padding-bottom:20px;
+        padding-bottom: 20px;
     }
     .column-line {
         background: #F5A623;
@@ -2470,7 +2473,7 @@ h3 {
         left: 0;
         padding-left: 65px;
     }
-    .nybox-inner{
+    .nybox-inner {
         height: -webkit-fill-available;
     }
     .nkboxout {
@@ -2482,7 +2485,7 @@ h3 {
         padding-top: 0;
         line-height: 20px;
         width: 96%;
-        height: -webkit-fill-available;
+        height: 207px;
         box-sizing: border-box;
         margin-bottom: 30px;
     }
@@ -2490,11 +2493,11 @@ h3 {
         width: 100%;
         height: 190px;
         padding: 0;
-        margin-top:-82px;
+        margin-top: -82px;
     }
     .nkimg img {
         width: 72%;
-        margin-left:39px;
+        margin-left: 39px;
         height: -webkit-fill-available;
     }
     .btn-topup {
@@ -2519,12 +2522,10 @@ h3 {
         height: 90%;
         margin-top: -17px;
         display: -webkit-box;
-
     }
     .nyimg img {
         left: 38%;
         width: 81px;
-
     }
     .nyimg {
         padding-bottom: 110px;
@@ -2833,7 +2834,7 @@ h3 {
         font-family: 'Avenir Book';
         font-weight: 800;
     }
-    .lines{
+    .lines {
         height: 29px;
         top: -19px;
         margin: 0 auto;
@@ -2842,7 +2843,7 @@ h3 {
     .slider-item-line {
         margin-left: 0px !important;
         margin-top: 14px !important;
-        width:108px;
+        width: 108px;
     }
     .slider-item-line-green {
         width: 211px;
@@ -2870,12 +2871,10 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .slider-item-line-left {
         width: 3px;
         height: 70px;
-
         background: #011936;
         border-radius: 13px;
         z-index: 1;
@@ -2889,7 +2888,6 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .panel-inner-box {
         width: 100%;
@@ -2901,7 +2899,6 @@ h3 {
     .panel-inner-box-null {
         display: none;
     }
-
     .pad-rl {
         padding-left: 0;
         padding-right: 0;
@@ -2942,7 +2939,7 @@ h3 {
         margin-top: 20px !important;
         margin-bottom: 1%;
     }
-    .title h1{
+    .title h1 {
         font-size: 17px;
         line-height: 27px;
     }
@@ -2986,7 +2983,7 @@ h3 {
         display: block;
         margin: 0;
     }
-    .ta{
+    .ta {
         height: 745px!important;
     }
     .form-out {
@@ -3029,7 +3026,7 @@ h3 {
     .mc {
         margin-top: 1%;
     }
-    .modal-accept{
+    .modal-accept {
         font-size: 10px!important;
     }
     .ps {
@@ -3300,7 +3297,6 @@ h3 {
     }
     .toggleoff {
         float: right;
-
         margin-top: 1%;
         margin-right: 2%;
         display: block;
@@ -3325,7 +3321,7 @@ h3 {
         top: 15%;
         width: 80%;
         height: 12%;
-        margin-top:-300px;
+        margin-top: -300px;
     }
     .slider-text h1 {
         font-size: 30px;
@@ -3337,9 +3333,9 @@ h3 {
     .slider-text a {
         margin-top: 0;
     }
-    .slayt img{
+    .slayt img {
         width: 100% !important;
-        margin-left:0 !important;
+        margin-left: 0 !important;
     }
     .slider-text .sliderbtn {
         width: 40%;
@@ -3404,7 +3400,7 @@ h3 {
         margin-top: -89px;
         margin-left: 301px;
     }
-    .column-line-left{
+    .column-line-left {
         width: 3px;
         height: 44px;
         background: #011936;
@@ -3442,7 +3438,6 @@ h3 {
         cursor: pointer;
         font-size: 18px;
     }
-
     .sec-slider-innertext {
         position: relative;
         box-sizing: border-box;
@@ -3532,7 +3527,7 @@ h3 {
         width: 50%;
         left: 23%;
     }
-    .nyinner{
+    .nyinner {
         font-size: 15px;
     }
     .isbbox {
@@ -3596,7 +3591,7 @@ h3 {
     .slider-item h1 {
         font-size: 12px;
     }
-    .lines{
+    .lines {
         height: 43px;
         top: -29px;
         margin: 0 auto;
@@ -3605,7 +3600,7 @@ h3 {
     .slider-item-line {
         margin-left: 0px !important;
         margin-top: 14px !important;
-        width:176px;
+        width: 176px;
     }
     .slider-item-line-green {
         width: 211px;
@@ -3633,12 +3628,10 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .slider-item-line-left {
         width: 3px;
         height: 70px;
-
         background: #011936;
         border-radius: 13px;
         z-index: 1;
@@ -3652,7 +3645,6 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .icons {
         height: 20%;
@@ -3898,7 +3890,7 @@ h3 {
     .slider-text h1 {
         font-size: 37px!important;
     }
-    .slayt img{
+    .slayt img {
         margin-left: 377px !important;
     }
     .controlout {
@@ -3974,14 +3966,14 @@ h3 {
         margin-top: -2%;
         width: 96%;
     }
-    .sec-slider{
-        font-size:26px;
+    .sec-slider {
+        font-size: 26px;
     }
     .sec-slider-text p {
         font-size: 14px;
         width: 96%;
     }
-    .nybox p{
+    .nybox p {
         font-size: 13px;
     }
     .nyinner {
@@ -4023,7 +4015,6 @@ h3 {
         margin-left: 5%;
         font-size: 16px;
         margin-top: 16px;
-
     }
     .mobileLogos {
         width: 50%;
@@ -4037,8 +4028,6 @@ h3 {
     .slider-item h1 {
         font-size: 15px;
     }
-
-
     .slider-prop {
         height: 375px;
         width: 100%;
@@ -4216,14 +4205,14 @@ h3 {
         color: white;
         margin-top: 5px;
     }
-    .lines{
-        height:99px;
-        top:-90px;
+    .lines {
+        height: 99px;
+        top: -90px;
     }
     .slider-item-line {
         margin-left: 0px !important;
         margin-top: 14px !important;
-        width:260px;
+        width: 260px;
     }
     .slider-item-line-green {
         width: 211px;
@@ -4251,12 +4240,10 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .slider-item-line-left {
         width: 3px;
         height: 70px;
-
         background: #011936;
         border-radius: 13px;
         z-index: 1;
@@ -4270,7 +4257,6 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .content-line {
         margin-left: 406px;
@@ -4281,14 +4267,14 @@ h3 {
 }
 
 @media (min-width: 1301px) and (max-width: 1400px) {
-    .lines{
-        height:99px;
-        top:-90px;
+    .lines {
+        height: 99px;
+        top: -90px;
     }
     .slider-item-line {
         margin-left: 0px !important;
         margin-top: 14px !important;
-        width:324px;
+        width: 324px;
     }
     .slider-item-line-green {
         width: 211px;
@@ -4316,12 +4302,10 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .slider-item-line-left {
         width: 3px;
         height: 70px;
-
         background: #011936;
         border-radius: 13px;
         z-index: 1;
@@ -4335,18 +4319,18 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
 }
+
 @media (min-width: 1401px) and (max-width: 1460px) {
-    .lines{
-        height:99px;
-        top:-90px;
+    .lines {
+        height: 99px;
+        top: -90px;
     }
     .slider-item-line {
         margin-left: 0px !important;
         margin-top: 14px !important;
-        width:324px;
+        width: 324px;
     }
     .slider-item-line-green {
         width: 211px;
@@ -4374,12 +4358,10 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
     .slider-item-line-left {
         width: 3px;
         height: 70px;
-
         background: #011936;
         border-radius: 13px;
         z-index: 1;
@@ -4393,6 +4375,5 @@ h3 {
         border-radius: 13px;
         display: inline-block;
         float: left;
-
     }
 }
