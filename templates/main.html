@@ -1,0 +1,461 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <!-- META SECTION -->
+        <title>{%block title%}{%endblock%}</title>
+        {% block meta %}{%endblock%}
+
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="keywords" content="apartman yönetim yazılımı, site yönetim yazılımı, aidat takip yazılımı, apartman yönetim programı, site yönetim programı, aidat takip programı, profesyonel apartman yönetimi, profesyonel site yönetimi, rezidans yönetimi, bina yönetimi, tesis yönetimi, online aidat ödeme, emlak yönetim">
+       {% comment %}Microsoft Clarity{% endcomment %}
+        {% comment %} <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "6k1tjwkc2t");
+        </script> {% endcomment %}
+        <link rel="icon" href="{% static 'customer_logo/favicon.ico' %}?app_version={{ APP_VERSION }}" type="image/x-icon" />
+        <!-- END META SECTION -->
+
+            <!-- page scripts -->
+        
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mycss2.css'%}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+        .pst {
+            position: relative;
+        }
+        
+        .flt {
+            float: left;
+        }
+        
+        .marg {
+            margin: 0 auto;
+        }
+        
+        .bordercolor {
+            border: 0px solid red;
+        }
+        
+        .pt {
+            padding-top: 50px;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        @font-face {
+            font-family: 'Avenir Black Oblique';
+            src: url('css/subset-Avenir-BlackOblique.woff2') format('woff2'), url('{% static "css/subset-Avenir-BlackOblique.woff"%}') format('woff');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir Book';
+            src: url('{% static "css/subset-Avenir-Book.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-Book.woff"%}') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-Black.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-Black.woff"%}') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-Light.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-Light.woff"%}') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-Heavy.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-Heavy.woff"%}') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-LightOblique.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-LightOblique.woff"%}') format('woff');
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-HeavyOblique.woff2" %}') format('woff2'), url('{% static "css/subset-Avenir-HeavyOblique.woff"%}') format('woff');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir Book';
+            src: url('{% static "css/subset-Avenir-BookOblique.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-BookOblique.woff"%}') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-Medium.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-Medium.woff"%}') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-Roman.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-Roman.woff"%}') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url('{% static "css/subset-Avenir-MediumOblique.woff2"%}') format('woff2'), url('{% static "css/subset-Avenir-MediumOblique.woff"%}') format('woff');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Avenir';
+            src: url("{% static 'css/subset-Avenir-Oblique.woff2'%}") format('woff2'), url('{% static "css/subset-Avenir-Oblique.woff" %}') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+        
+        h1 {
+            font-family: 'Avenir';
+            color:#011936 ;
+        }
+        
+        p,
+        a,
+        ul,
+        li,input,label,select{
+            font-family: 'Avenir' !important;
+            color:#011936 ;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        i {
+            vertical-align: -webkit-baseline-top !important;
+        }
+        a:hover{
+            color:black;
+            text-decoration:none;
+        }
+
+    </style>
+    {% block css %} {% endblock %}
+            <!-- ./page scripts -->
+{% block js %} {% endblock %}
+
+        
+
+
+
+    </head>
+    <body>
+        <!-- page container -->
+         <!-- nav bar-->
+
+    <nav id="navigate" class="navigator bordercolor">
+        <div class="containerNav bordercolor">
+            <div id="togglebtn" class="toggle bordercolor">
+                <img src="{% static 'img/bars.png'%}" alt="">
+            </div>
+            <div class="logo bordercolor"><a href="#"><img src="{% static 'img/logo-small@2x.png'%}" alt=""></a></div>
+
+
+            <ul id="ulside">
+                <div id="togglebtnoff" class="toggleoff bordercolor">
+                    <i class="fa fa-times" style="color:white;margin-top: 12px;"></i>
+                </div>
+                <li class="bordercolor">
+                    <a href="#">Hakkımızda</a>
+                </li>
+                <li class="bordercolor">
+                    <a href="#">Özellikler</a>
+                </li>
+                <li class="bordercolor">
+                    <a href="#">Teklif Al</a>
+                </li>
+                <li id="ulmainpage" class="bordercolor">
+                    <a href="#">Ana Sayfa</a>
+                </li>
+                <li>
+                    <span id="loginbtn" class="bordercolor bt btlogin">Giriş yap</span>
+                    <ul id="dropmenu">
+                        <li class="bordercolor">
+                            <a href="#}?user_type=customer_user">Yönetici Girişi</a>
+                        </li>
+                        <li class="bordercolor">
+                            <a href="#?user_type=board_member">Kurul Üyesi Girişi</a>
+                        </li>
+                        <li class="bordercolor">
+                            <a href="#?user_type=site_personnel_user">Site Personeli Girişi</a>
+                        </li>
+                        <li class="bordercolor">
+                            <a href="#?user_type=resident_user">Malik/Sakin Girişi</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+      <div class="btn-topup">
+        <a href="#"><img style="width:100%;" src="{% static 'img/up-arrow.png'%}"></a>
+    </div>
+
+            <!-- ./nav -->
+
+            {% block content %} {% endblock %}
+
+            <!-- page footer -->
+            <div class="col-md-12 bordercolor" style="background: #011936;overflow:hidden;">
+
+        <div class="footer-container bordercolor">
+            <div class="row bordercolor" style="max-width:1110px;margin:auto;">
+                <div class="footer bordercolor">
+                    <div class="bordercolor footer-logo">
+                        <img src="{% static 'img/logo-small@2x.png'%}" alt="">
+                    </div>
+                    <div class="footer-box bordercolor">
+                        <ul>
+                            <li><a href="#">Anasayfa</a></li>
+                            <li><a href="#">Özellikler</a></li>
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">İçerikler</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-box bordercolor">
+                        <ul>
+                            <li><a href="#}">Teklif Al</a></li>
+
+                            <li><a href="#">İletişim</a></li>
+                            <li><a href="#">Gizlilik Politikası</a></li>
+                            <li><a href="#">KVKK Metni</a></li>
+                            <li><img id="visaimg" style="margin-left: 0%;" src="{% static 'img/mastercard_visa.png'%}" alt=""></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-box flx bordercolor">
+                        <div class="footer-ff-out">
+                            <p>Bizi takip edin</p>
+                            <div class="footer-ff">
+                                <div class="footer-img">
+                                    <a href="https://www.instagram.com/yonetisimteknoloji/"><img src="{% static 'img/instagram (2).png'%}"></a>
+                                </div>
+                            </div>
+                            <div class="footer-ff">
+                                <div class="footer-img">
+                                    <a href="https://www.linkedin.com/company/y%C3%B6neti%C5%9Fim-teknoloji-ve-bili%C5%9Fim-sistemleri"><img src="{% static 'img/linkedin (1).png'%}"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-ff-out">
+                            <p>Uygulamamızı indirin</p>
+                            <div class="footer-ad">
+                                <div class="footer-img">
+                                    <a href="https://play.google.com/store/apps/details?id=com.yonetisim.yonetisim"><img src="{% static 'img/google-play (1).png'%}"></a>
+                                </div>
+                            </div>
+                            <div class=footer-ad>
+                                <div class="footer-img">
+                                    <a href="https://apps.apple.com/us/app/y%C3%B6neti%C5%9Fim/id1461046484"><img src="{% static 'img/apple.png'%}"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-12 footer-ths">
+                        <p>© {% now "Y" %} Yönetişim - Tüm hakları saklıdır.</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    {% comment %} <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> {% endcomment %}
+    <script src="{% static 'js/settings.js'%}">
+    </script>
+        <script src="{% static 'js/jquery.js'%}"></script>
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+        <script type="application/ld+json">{
+              "@context":"http://schema.org",
+              "@type":"ItemList",
+              "itemListElement":[
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 1,
+                  "name": " Özellikler",
+                  "description": "Yönetişim; apartman, site yöneticileri ve yönetim firmalarının; finans, iletişim ve yönetime dair tüm ihtiyaçları için özel olarak geliştirilmiş çözümler sunar.",
+                  "url":"https://dev.yonetisim.com/wt-ozellikler"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 2,
+                  "name": "Malik-Sakin Girişi",
+                  "description": "Yönetişim hesabınıza giriş yaparak; aidat ödeme, borç ve ekstre görüntüleme, yönetime talep ve şikayet iletme ve diğer birçok işlemi gerçekleştirebilirsiniz.",
+                  "url":"https://dev.yonetisim.com/account/login/?user_type=resident_user"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 3,
+                  "name": "Teklif Al",
+                  "description": "Yönetişim ürünleri ve kullanımları, ücretler ya da şirketimiz ile ilgili her türlü soru ve talepleriniz için bizlerle iletişime geçebilirsiniz.",
+                  "url":"https://dev.yonetisim.com/wt-teklifal"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 4,
+                  "name": "Hakkımızda",
+                  "description": "Yönetişim; 2013’ten beri apartman, site, rezidans ve iş merkezi yöneticilerinin hayatını kolaylaştıran ve verimlilik artıran yazılım çözümleri geliştirmektedir.",
+                  "url":"https://dev.yonetisim.com/wt-hakkimizda"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 5,
+                  "name": "İçerikler",
+                  "description": "Apartman, site, rezidans, iş merkezi yönetimlerinin takip etmesi gereken güncel mevzuat ve uygulamalarla ilgili bilgilere Yönetişim içeriklerinde ulaşabilirsiniz.",
+                  "url":"https://dev.yonetisim.com/icerikler"
+                },
+                {
+                  "@type": "SiteNavigationElement",
+                  "position": 6,
+                  "name": "İletişim",
+                  "description": "Sizlere en iyi hizmeti sunmak istiyoruz. Yönetişim ile ilgili soru ve taleplerinizi ileterek ürün ve hizmet kalitemizi geliştirmemizde bize yardımcı olabilirsiniz.",
+                  "url":"https://dev.yonetisim.com/wt-iletisim"
+                }
+              ]
+            }
+</script>
+    {% block script %}
+
+    {% endblock %}
+    {% comment %} <script>
+        if (document.location.hostname.search("yonetisim.com") !== -1) {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            {% if request.user.is_authenticated %}
+                ga('create', '{{ GA_ID }}', 'auto', {
+                    userId: {{ request.user.id }}
+                });
+                ga('set', 'dimension3', '{{ request.user.id }}');
+                {% if request.session.role_type %}
+                    ga('set', 'dimension4', '{{ request.session.role_type }}');
+                {% endif %}
+
+            {% else %}
+                ga('create', '{{ GA_ID }}', 'auto');
+            {% endif %}
+
+            {% if not IS_PRODUCTION_ENVIRONMENT %}
+                ga('set', 'sendHitTask', null);
+            {% endif %}
+
+            ga('send', 'pageview');
+        }
+
+    </script> {% endcomment %}
+    </body>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+.containerNav {
+    float: left;
+}
+
+.navigator {
+    background-color: red;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    align-items: left;
+    z-index: 999;
+    background: none;
+    font-size: 35.2941px;
+    position: fixed;
+    top: 0;
+    width: 78%;
+    margin-left: 2%;
+}
+
+.navigator ul {
+    height: 581px;
+    width: 500px;
+    right: -50%;
+    top: 0px;
+    text-align: center;
+    background: #011936;
+    position: fixed;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 99999999;
+}
+
+.navigator ul li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigator ul li a {
+    font-size: 25px;
+}
+
+.navigator ul li ul {
+    margin-top: 10px;
+    /*background: #011936;
+*/
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    right: 0px;
+    top: 310px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.navigator ul li ul li {
+    float: left;
+    width: 100%;
+    height: 17%;
+    text-align: center;
+    line-height: 10px;
+}
+
+.toggle {
+    display: block;
+}
+
+.btlogin {
+    font-size: 20px;
+    position: relative;
+    top: 213px;
+    left: -7px;
+    width: 100%;
+    height: 60px;
+    background: rgba(149, 181, 97, 0.2);
+    border-radius: 0;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+}
+
+.toggleoff {
+    float: right;
+    padding: auto;
+    margin-top: 1%;
+    margin-right: 2%;
+    display: block;
+    font-size: 40px;
+    padding: 0 20px;
+}
+
+.slider-text {
+    top: 15%;
+    width: 80%;
+    height: 12%;
+}
+
+.slider-text h1 {
+    font-size: 40px;
+}
+
+.slider-text p {
+    font-size: 15px;
+    margin-top: -2%;
+}
+
+.slider-text a {
+    margin-top: 0;
+}
+
+.slider-text .sliderbtn {
+    width: 30%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 5px;
+}
+
+.slider-text .sliderbtn span {
+    font-size: 300%;
+    line-height: 17px;
+}
+
+.column-items {
+    height: 80px;
+    font-size: 20px;
+}
+
+.column-line {
+    width: 175px;
+    height: 5px;
+    left: 10%;
+    top: 115px;
+    margin-left: 5px;
+}
+
+.column-line-green {
+    width: 20px;
+    height: 5px;
+    left: 70%;
+}
+
+.sec-slider {
+    font-size: 25px;
+}
+
+.sec-slider-text p {
+    font-size: 20px;
+}
+
+.card-out h1 {
+    font-size: 20px;
+}
+
+.card-out a {
+    font-size: 20px;
+}
+
+.mobileLogos {
+    height: 30%;
+    width: 50%;
+    background: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 5px;
+}

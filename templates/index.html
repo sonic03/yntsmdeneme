@@ -1,0 +1,490 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}
+    Yönetişim: Apartman Site Yönetim Yazılımı
+{% endblock %}
+{% block description %}
+    Apartman, site yöneticileri ve yönetim firmalarının tüm ihtiyaçlarını tek bir sistemde karşılayan en kapsamlı, kolay, esnek ve uygun fiyatlı yönetim yazılımıdır.
+{% endblock %}
+{% block css %}
+<style>.i {
+    vertical-align: -webkit-baseline-top;
+}</style>
+    <style>
+    @media (min-width: 350px) and (max-width: 767px){
+        .gr {
+            display: block !important;
+            position: absolute;
+            top: 66px;
+            z-index: 1;
+            width: 100%;
+            height: 302px;
+            background: linear-gradient(
+        180deg
+        , #011936 10%, rgba(1, 25, 54, 0.6) 46%, rgba(1, 25, 54, 0) 99%);}
+    }
+
+
+    </style>
+{% endblock css %}
+{% block content %}
+    <div class="gr"></div>
+    <div class="slider bordercolor">
+        <div class="slayt fades bordercolor"><img class="op" src="{% static 'img/Slider1.jpg'%}" />
+            <div class="col-md-12 bordercolor">
+                <div class="slider-text">
+
+                    <h1 class="bordercolor">Apartman ve site yöneticileri için<br>bir asistandan çok daha fazlası</h1>
+
+                    <p class="bordercolor">Yönetim, finans ve iletişime dair tüm ihtiyaçlarınızı tek bir sistemde karşılayan <br>kolay, esnek ve uygun fiyatlı yönetim yazılımı
+                    </p>
+                    <a href="#?type=apartman_site" id="sliderbtnIn" class="sliderbtn bordercolor" style="width:360px!important;">
+                        <span class="fs" style="text-align:center;position:relative;top:1px;">Bilgilerinizi bırakın, sizi arayalım!</span></a>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="slayt fades"><img src="{% static 'img/Slider2.jpg'%}" />
+            <div class="col-md-12 bordercolor">
+                <div class="slider-text">
+
+                    <h1 class="bordercolor">İnşaat ve yönetim firmaları için <br>bir çözüm ortağından çok daha fazlası</h1>
+
+                    <p class="bordercolor">Alanındaki en kapsamlı ve esnek yönetim yazılımı ile <br>iş yükünüzü değil işinizi büyütün
+                    </p>
+                    <a href="#?type=insaat" id="sliderbtnIn" class="sliderbtn bordercolor" style="width:360px;">
+                        <span class="fs" style="text-align:center;position:relative;top:1px;">Bilgilerinizi bırakın, sizi arayalım!</span></a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="controlout bordercolor">
+        <div class="control bordercolor">
+            <span class="dot" onclick="myFirst()"></span>
+            <span class="dot" onclick="mySec()"></span>
+        </div>
+    </div>
+    <div class="col-lg-12 lowesliderout">
+        <div class="lowerslider">
+            <p>Yönetim, finans ve iletişime dair tüm ihtiyaçlarınızı tek bir sistemde karşılayan kolay, esnek ve uygun fiyatlı yönetim yazılımı</p>
+        </div>
+        <div class="lowerslider">
+            <p>Alanındaki en kapsamlı ve esnek yönetim yazılımı ile iş yükünüzü değil işinizi büyütün</p>
+        </div>
+    </div>
+    <!-- slider end-->
+    <div class="container bordercolor">
+        <div class="row bordercolor mbl-rw">
+            <div class="col-md-12 bordercolor" style="margin-bottom: 3px;">
+                <h1 class="kimler">Kimler için & Özellikler</h1>
+            </div>
+            <div class="col-md-12">
+                <div class="row bordercolor row-inner">
+                    <div name="column-item" class="col-md-6 bordercolor col-ht flt">
+                        <div clas="bordercolor" style="">
+                            <h1 id="apt" class="column-items bordercolor">Apartman / Site / Rezidans </h1><i class="fa fa-angle-down fa-lg"></i>
+                            <span class="column-line"></span>
+                            <span class="column-line-green"></span>
+                            <span class="column-line-top"></span>
+                            <span class="column-line-green-top"></span>
+                            <span class="column-line-green-left"></span>
+                            <span class="column-line-left"></span>
+
+                        </div>
+
+                    </div>
+                    <div name="column-item" class="col-md-6 bordercolor col-ht flt">
+                        <div style="align-items:center;">
+                            <h1 id="pro" class="column-items">İnşaat & Yönetim Firmaları</h1><i class="fa fa-angle-down fa-lg"></i>
+                            <span class="column-line"></span>
+                            <span class="column-line-green"></span>
+                            <span class="column-line-top"></span>
+                            <span class="column-line-green-top"></span>
+                            <span class="column-line-green-left"></span>
+                            <span class="column-line-left"></span>
+
+                        </div>
+
+                    </div>
+                    <!-- 2.slider-->
+                    <div name="sec-slider" class="col-12 bordercolor" style="height:50%;box-sizing:border-box;margin-top:10px;">
+                        <div class="col-md-2 col-12 pst bordercolor" style="float:left;">
+
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="yonetim">YÖNETİM</h1>
+                                <span class="box-column-line"></span>
+
+                            </div>
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="finans">FİNANS</h1>
+                                <span class="box-column-line"></span>
+
+                            </div>
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="iletisim">İLETİŞİM</h1>
+                                <span class="box-column-line"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 bordercolor" style="float:left;height:240px;">
+                            <div class="sec-slider-innertext">
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim, bir apartman ya da site yöneticisinin hayatını kolaylaştıran tüm imkanları sunar. En temel bilgileri özet olarak sunup, bir bakışta mevcut durumu ve yapılacak işleri görmenizi sağlar. Harcama ve tahsilatları kolayca yönetip, en güncel rapor ve dosyalara her an erişebilirsiniz. Güvenli bir altyapı ve üst düzey destek hizmeti ile Yönetişim, bir asistandan çok daha fazlası.
+                                    </p>
+                                    <a href="#?id=0">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim apartmanınızda/sitenizde gerçekleştirdiğiniz finansal yönetimi kolaylaştıracak modüllerle donatılmıştır. Akıllı algoritmaları ile çoğu işlemi otomatik gerçekleştirir ya da size tek tıkla onaylayacak seviyeye kadar getirir, finansal işlemlere ve takibe ayırmanız gereken vakti en aza indirir. En güncel bilgiye en hızlı şekilde erişir, her zaman tutarlı ve anlaşılır raporlar sunarsınız.
+
+                                    </p>
+                                    <a href="#?id=1">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim ile üyelerinizle iletişiminizi en üst seviyede tutarsınız. SMS, e-posta, mobil uygulama bildirimleri ya da size sunulan ücretsiz web sitesinde yayınlayacağınız içerikler ile kat malikleri ve sakinlerine dilediğiniz gibi erişebilirsiniz. Gelişmiş şikayet yönetim sistemi ile sorunlardan en kısa zamanda haberdar olur, hemen müdahale edip geri bildirim yapabilirsiniz.
+                                    </p>
+                                    <a href="#?id=2">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 bordercolor sec-mg">
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/kimler-icin-yonetim.jpg' %}" />
+                            </div>
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/kimler-icin-finans.jpg' %}" />
+                            </div>
+                            <div class="sec-slider-img" style="border-radius: 10px;">
+                                <img src="{% static 'img/kimler-icin-iletisim.jpg' %}" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 bordercolor" style="position:relative; margin-top:32px;float:left;">
+                            <a href="#?type=apartman_site" id="neden-yonetisim"class="btn-yellow btn-teklif">Teklif al</a>
+                        </div>
+                    </div>
+                    <!-------------------------2-------------------------->
+                    <div name="sec-slider" class="col-12 bordercolor" style="margin-top:10px;height:50%;box-sizing:border-box;">
+                        <div class="col-md-2 col-12 pst bordercolor" style="float:left;">
+
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="yonetim">YÖNETİM</h1>
+                                <span class="box-column-line"></span>
+
+                            </div>
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="finans">FİNANS</h1>
+                                <span class="box-column-line"></span>
+
+                            </div>
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="iletisim">İLETİŞİM</h1>
+                                <span class="box-column-line"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 bordercolor" style="float:left;height:240px;">
+                            <div class="sec-slider-innertext">
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim, bir profesyonel tesis yöneticisinin hayatını kolaylaştıran tüm imkanları sunar. Projelerinizin mevcut durumlarını ve yapılacak işlerinizi kuş bakışı bir görüş açısı ile gösterir, en temel verileri yönetici özetleri halinde sunar. Operasyonel yükünüzü en aza indirir, müşteri memnuniyetini arttırmanız için gerekli enstrümanları sağlar. Üst düzey destek hizmeti ve güvenli bir altyapı ile Yönetişim, bir çözüm ortağından çok daha fazlası.
+                                    </p>
+                                    <a href="#?id=3">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim yönettiğiniz projelerde gerçekleştirdiğiniz finansal yönetimi kolaylaştıracak modüllerle donatılmıştır. Akıllı algoritmaları ile çoğu işlemi otomatik gerçekleştirir ya da size tek tıkla onaylayacak seviyeye kadar getirir. Finansal işlemlere ve takibe ayırmanız gereken vakti en aza indirip, müşterilerinize odaklanmanızı sağlar.. En güncel bilgiye en hızlı şekilde erişir, her zaman tutarlı ve anlaşılır raporlar sunarsınız.
+
+                                    </p>
+                                    <a href="#?id=4">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim ile müşteri ilişkileri yönetimini en üst seviyede tutarsınız. SMS, e-posta, mobil uygulama bildirimleri ya da yönettiğiniz projelerin ücretsiz web sitelerinde yayınlayacağınız içerikler ile üyelere dilediğiniz gibi erişebilirsiniz. Gelişmiş şikayet yönetim sistemi ile sorunlardan en kısa zamanda haberdar olur, hemen müdahale edip geri bildirim yapabilirsiniz.
+                                    </p>
+                                    <a href="#?id=5">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 bordercolor sec-mg">
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/kimler-icin-yonetim.jpg' %}" />
+                            </div>
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/kimler-icin-finans.jpg' %}" />
+                            </div>
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/kimler-icin-iletisim.jpg' %}" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 bordercolor" style="position:relative; margin-top:32px;float:left;">
+                            <a href="#?type=insaat" id="neden-yonetisim"class="btn-yellow btn-teklif">Teklif al</a>
+                        </div>
+                    </div>
+                    <!-----------------3------------->
+                    {% comment %}<div name="sec-slider" class="col-12 bordercolor" style="margin-top:10px;height:50%;box-sizing:border-box;">
+                        <div class="col-md-2 col-12 pst bordercolor" style="float:left;">
+
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="yonetim">YÖNETİM</h1>
+                                <span class="box-column-line"></span>
+
+                            </div>
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="finans">FİNANS</h1>
+                                <span class="box-column-line"></span>
+
+                            </div>
+                            <div class="flt box bordercolor">
+                                <h1 class="sec-slider" id="iletisim">İLETİŞİM</h1>
+                                <span class="box-column-line"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 bordercolor" style="float:left;height:240px;">
+                            <div class="sec-slider-innertext">
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim, işlerinizin kontrolünün sizde olmasını sağlar. Sadece kapsamlı raporlama ile denetlenebilirlik değil tüm ekibin ve görevlendirmelerin takibinin yapılması, gerekli dosya ve verilere kolayca ulaşılabilmesi,
+                                        geçmişe dönük veriler ile daha tutarlı gelecek projeksiyonlarının elde edilmesini sağlar.
+                                    </p>
+                                    <a href="#">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                                <div class="sec-slider-text">
+                                    <p>Yönetişim, piyasadaki en kapsamlı ve entegre finans yönetim modüllerine sahiptir. Malik ve sakinleri, bağımsız bölümler özelinde ya da ticari ilişki bulunan firmaların ve kurumların borç-tahsilat ilişkilerini ihtiyaç
+                                        duyulabilecek tüm enstrümanların kullanımına izin verecek şekilde yönetilmesini sağlar.
+
+                                    </p>
+                                    <a href="#">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                                <div class="sec-slider-text">
+                                    <p>Karşılıklı ve hızlı etkileşimin önem kazandığı günümüzde, yönetimlerin hem sakinler hem de hizmet aldıkları firma ve kurumlar ile iletişimlerini çoklu kanallar üzerinden sürdürebileceği alt yapı Yönetişim’de sunulmuştur.
+                                    </p>
+                                    <a href="#">Daha fazla bilgi al <i class="fa fa-angle-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 bordercolor sec-mg">
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/webtest/yönetim.jpg'%}" />
+                            </div>
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/webtest/finans.jpg'%}" />
+                            </div>
+                            <div class="sec-slider-img">
+                                <img src="{% static 'img/webtest/iletisim.jpg'%}" />
+                            </div>
+                        </div>
+                    </div>{% endcomment %}
+
+
+
+
+                </div>
+
+            </div>
+            <!-- 2.slider-->
+
+
+            <div class="col-md-12">
+                <h1 class="kimler">Neden Yönetisim ?</h1>
+            </div>
+            <div class="nybox-out">
+                <!----------------Neden Yönetimsim-Apartman--------------->
+                <div class="nybox-inner">
+                    <div class="col-md-12 bordercolor" style="position:relative;box-sizing:border-box;">
+                        <p class="nkbox">Hayatınızı kolaylaştıracak otomasyon özellikleri, yönetimdeki tüm paydaşların dahil olabileceği ortak yönetim anlayışına uygun altyapı, kolayca alabileceğiniz tutarlı ve hatasız raporlar, web sitesinden mobil uygulama bildirimlerine kadar ücretsiz kullanabileceğiniz iletişim kanalları ile yönetimde yeni bir dönem başlatın.
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-12 flt bordercolor">
+                        <div class="nyimg bordercolor">
+                            <img src="{% static 'img/kolay-ve-anlasilir.png' %}">
+                        </div>
+                        <div class="bordercolor nybox">
+                            <h1 class="nyinner bordercolor">Kolay ve Anlaşılır</h1>
+                            <p> Kullanıcı deneyimleri gözetilerek sürekli geliştirilen arayüzüyle Yönetişim öğrenmesi kolay ve anlaşılır bir yazılımdır. Gelişmiş ekranları, yapmak istediğiniz işlemleri bir araya getirerek hızlı ulaşım sağlarken, otomasyon özellikleri günlük işlerinizde en büyük yardımcınız olur.
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-12 flt bordercolor">
+                        <div class="nyimg bordercolor">
+                            <img src="{% static 'img/ustun-kullanıcı-deneyimi.png' %}">
+                        </div>
+
+                        <div class="bordercolor nybox">
+                            <h1 class="nyinner bordercolor">Üstün Kullanıcı Deneyimi</h1>
+                            <p>Uzman destek ekibimiz mevcut verilerinizi titizlikle Yönetişim’e aktarır, size eğitimler ve öğretici rehberler sağlar. Kullanımınızın her aşamasında tüm ihtiyaçlarınızda size yardımcı olmak için hazırdır. Yönetişim ile asla yalnız değilsiniz.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-12 flt bordercolor">
+                        <div class="nyimg bordercolor">
+                            <img src="{% static 'img/etkin-yonetisim.png' %}">
+                        </div>
+                        <div class="bordercolor nybox">
+                            <h1 class="nyinner bordercolor">Etkin Yönetişim</h1>
+                            <p>Yönetici, denetçi ve temsilciler ortak bir platformda görev ve işlerini yürütür, kat maliki ve kiracılar aynı sistemde kendi hesaplarını görüntüler, ödeme yapar, dilek ve şikayetlerini iletir. Yönetişim’in sunduğu çeşitli iletişim kanalları ile ortak çalışma çok daha etkin ve şeffaf.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!----------------Neden Yönetisim-İnşaat----------------->
+                <div class="nybox-inner">
+                    <div class="col-md-12 bordercolor" style="position:relative;box-sizing:border-box;">
+                        <p class="nkbox">Tesis yönetim profesyonelleri için özelleşmiş modüller, müşterilerinizi ve paydaşlarınızı dahil edebileceğiniz iş süreçleri, kapsamlı portföy raporları ve çok daha fazlası Yönetişim’de.</p>
+                    </div>
+                    <div class="col-md-4 col-12 flt bordercolor">
+                        <div class="nyimg bordercolor">
+                            <img src="{% static 'img/kus-bakisi-yonetim.png' %}">
+                        </div>
+                        <div class="bordercolor nybox">
+                            <h1 class="nyinner bordercolor">Kuş Bakışı Yönetim</h1>
+                            <p>Yönetişim’in çıkış noktası inşaat ve profesyonel yönetim şirketlerinin tüm ihtiyaçlarını tek bir sistemde sunmaktır. Yönetişim ile projelerinizin mevcut durumlarını ve yapılacak işlerinizi tek bir ekranda kuş bakışı görebilir, en temel verilere yönetici özetleri halinde ulaşabilirsiniz.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 flt bordercolor">
+                        <div class="nyimg bordercolor">
+                            <img src="{% static 'img/esnek-ve-ozel-cozumler.png' %}">
+                        </div>
+                        <div class="bordercolor nybox">
+                            <h1 class="nyinner bordercolor">Esnek ve Özel Çözümler</h1>
+                            <p>Uyarlanabilir yapısı ile Yönetişim’i iş süreçlerinize ve ihtiyaçlarınıza göre şekillendirebilirsiniz. Böylece siz yazılıma uymak zorunda kalmazsınız, Yönetişim size uyum sağlar. Yönetişim, deneyimli yazılım geliştirme ekibi ile yeni fikir ve isteklerinizi hayata geçirmek için sizi dinlemeye hazır.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 flt bordercolor">
+                        <div class="nyimg bordercolor">
+                            <img src="{% static 'img/ustun-kullanıcı-deneyimi.png' %}">
+                        </div>
+                        <div class="bordercolor nybox">
+                            <h1 class="nyinner bordercolor">Üstün Kullanıcı Deneyimi</h1>
+                            <p>Uzman destek ekibimiz mevcut verilerinizi titizlikle Yönetişim’e aktarır, size eğitimler ve öğretici rehberler sağlar. Kullanımınızın her aşamasında tüm ihtiyaçlarınızda size yardımcı olmak için hazırdır. Yönetişim ile siz ya da müşterileriniz asla yalnız değilsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="margin-top:10px;">
+                <h1 id="nasil-kullanilir" class="kimler">Nasıl kullanılır ?</h1>
+            </div>
+            <div class="col-md-12 bordercolor nkboxout">
+                <p class="nkbox">Yönetişim bulut tabanlı bir apartman-site yönetim yazılımıdır. İnternet bağlantısı olan tüm cihazlardan kolayca ve güvenle kullanılabilir, kurulum ya da altyapı maliyeti gerektirmez.</p>
+            </div>
+            <div class="col-md-12 bordercolor ph">
+                <div class="nkimg bordercolort">
+                    <img src="{% static 'img/Set.png'%}"/>
+                </div>
+            </div>
+            <!------------modal----------------->
+            <div class="modal" id="thanks" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>Mesajınız iletildi. En yakın sürede geri dönüş yapılacaktır.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!------------modal----------------->
+            <div class="col-md-12">
+                <h1 class="kimler bordercolor hg">Yönetişim'e Katılın</h1>
+            </div>
+            <div class="col-md-12 bordercolor">
+                {% comment %}yeni logolar geldiğinde açılacak{% endcomment %}
+                {% comment %}<div class="bordercolor">
+                    <img class="imgey" src="{% static 'img/webtest/emlakyönetim.png'%}">
+                    <img class="imgtoki" src="{% static 'img/webtest/toki.png'%}">
+                    <img class="imgrh" src="{% static 'img/webtest/wom yonetim.png'%}">
+                </div>{% endcomment %}
+
+            </div>
+            <div class="col-md-12 bordercolor isbboxout">
+                <div class="bordercolor isbboxin">
+                    <div class="isbbox">
+                        <img src="{% static 'img/il.png'%}" />
+                        <h1 class="bordercolor">64</h1>
+                        <p class="bordercolor">İl</p>
+                    </div>
+                    <div class="isbbox">
+                        <img src="{% static 'img/apartman-site.png'%}" />
+                        <h1>573</h1>
+                        <p>Apartman-Site</p>
+                    </div>
+                    <div class="isbbox">
+                        <img src="{% static 'img/bagimsiz-bolum.png'%}" />
+                        <h1>227.898</h1>
+                        <p>Bağımsız Bölüm</p>
+                    </div>
+                    <div class="isbbox">
+                        <img src="{% static 'img/kullanici.png'%}" />
+                        <h1>300.868</h1>
+                        <p>Kullanıcı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 bordercolor" style="position:relative; margin-top:32px;float:left;">
+                <a href="#" class="btn-yellow btn-teklif">Teklif al</a>
+            </div>
+            <!--Güncel içerikler BLOK Kısmı kapalı -->
+            {% comment %} <div class="col-md-12 bordercolor c-content-out">
+                <a href="{% url 'posts' %}"><h1 class="kimler">Güncel İçerikler <i class="fa fa-angle-right"></i></h1></a>
+                
+                <div class="card-container bordercolor">
+                    {% for l in lowercontent %}
+                        <div class="card-out bordercolor">
+                            <div class="card-img">
+                            {% if l.blog_img %}
+                                <img src="{{l.blog_img.url}}" alt="{{l.img_alt}}">
+
+                            {% endif %}
+
+                            </div>
+                            <h1 class="bordercolor">{{l.title}}</h1>
+                            <div class="trun">{{l.content|truncatewords:5|safe}}</div>
+                            <a class="bordercolor" href="{% url 'blogdetail' l.slug %}">Devamını oku <i class="fa fa-angle-right"></i></a>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+            </div> {% endcomment %}
+        </div>
+    </div>
+{% endblock  %}
+
+{% block script %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% if messages %}
+
+        {% for message in messages %}
+            {% if message.tags == 'success' %}
+                <script>
+                    $("#thanks").modal('show');
+                    setTimeout(function(){
+                          $('#thanks').modal('hide')
+                        }, 3000);
+                </script>
+            {% endif %}
+        {% endfor %}
+
+    {% endif %}
+
+
+
+
+{% endblock script %}
