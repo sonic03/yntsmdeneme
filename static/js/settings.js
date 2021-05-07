@@ -5,19 +5,19 @@ var drop = document.getElementById("dropmenu");
 var sider = document.getElementById("ulside");
 var ulMainPage = document.getElementById("ulmainpage");
 var visaimg = document.getElementById("visaimg");
-if(!title.includes("Girişi")){
-        drop.style.display = "none";
+if (!title.includes("Girişi")) {
+    drop.style.display = "none";
 
 
-    if(window.screen.width < 975){
-        visaimg.style.marginLeft="-60%";
+    if (window.screen.width < 975) {
+        visaimg.style.marginLeft = "-60%";
     }
-    if(window.screen.width < 975){
-        ulMainPage.style.display="block";
-    }else{
-        ulMainPage.style.display="none";
+    if (window.screen.width < 975) {
+        ulMainPage.style.display = "block";
+    } else {
+        ulMainPage.style.display = "none";
     }
-//loginbutton
+    //loginbutton
 
     document.getElementById("loginbtn").addEventListener("click", dropper);
 
@@ -27,49 +27,49 @@ if(!title.includes("Girişi")){
 
 
     function dropper() {
-    if (drop.style.display == "none") { drop.style.display = "block"; } else { drop.style.display = "none"; }
-}
-
-window.onscroll = function() { navFunc() };
-
-function navFunc() {
-    if (window.screen.width <= 500) {
-        if (window.pageYOffset >= 0.5) {
-
-
-
-
-        } else {
-
-            nav.style.display = "static";
-
-        }
-
-    } else if (window.pageYOffset >= 100) {
-
-
-
-        nav.style.display = "none";
-        document.querySelector(".btn-topup").style.display = "block";
-    } else {
-
-        nav.style.display = "flex";
-        document.querySelector(".btn-topup").style.display = "none";
+        if (drop.style.display == "none") { drop.style.display = "block"; } else { drop.style.display = "none"; }
     }
 
-}
+    window.onscroll = function() { navFunc() };
+
+    function navFunc() {
+        if (window.screen.width <= 500) {
+            if (window.pageYOffset >= 0.5) {
 
 
-document.getElementById("togglebtn").addEventListener("click", toggler);
-document.getElementById("togglebtnoff").addEventListener("click", togglerreverse);
 
-function toggler() {
-    sider.style.right = "0";
-}
 
-function togglerreverse() {
-    sider.style.right = "-800px";
-}
+            } else {
+
+                nav.style.display = "static";
+
+            }
+
+        } else if (window.pageYOffset >= 100) {
+
+
+
+            nav.style.display = "none";
+            document.querySelector(".btn-topup").style.display = "block";
+        } else {
+
+            nav.style.display = "flex";
+            document.querySelector(".btn-topup").style.display = "none";
+        }
+
+    }
+
+
+    document.getElementById("togglebtn").addEventListener("click", toggler);
+    document.getElementById("togglebtnoff").addEventListener("click", togglerreverse);
+
+    function toggler() {
+        sider.style.right = "0";
+    }
+
+    function togglerreverse() {
+        sider.style.right = "-800px";
+    }
 }
 if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
     var slayt = document.getElementsByClassName("slayt");
@@ -184,6 +184,11 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
     var col_p = document.getElementsByClassName("column-line-p");
     var slideSayi = secSlider.length;
     var slideNo = 0;
+    var secSliderMobile = document.getElementsByName("sec-slider-mobile");
+    var secSliderMobileH = document.getElementsByClassName("ssmobile");
+    var sliderTextMobile = document.getElementsByClassName("sec-slider-text-mobile");
+    var linesMobile = document.getElementsByClassName("box-column-line-mobile");
+
 
 
     showSecSlide(slideNo);
@@ -194,7 +199,9 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
     function lsttt(e) {
         for (i = 0; i < 3; i++) {
             try {
-                var tr = e.target.parentElement.parentElement.parentElement.parentElement.children[i].children[0].children[0];
+
+                if (window.screen.width < 600) { var tr = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.children[i].children[0].children[0]; } else { var tr = e.target.parentElement.parentElement.parentElement.parentElement.children[i].children[0].children[0]; }
+                console.log(tr);
                 if (tr.style.color != "grey" && tr.id == "apt") {
 
                     if (e.target.id == "yonetim") {
@@ -220,12 +227,14 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
                     (showSecSlide(slideNo));
                 }
             } catch (TypeError) {
-
+                console.log(TypeError);
             }
 
         }
 
     }
+
+
 
     function showSecSlide(slideNumber) {
         slideNo = slideNumber;
@@ -236,10 +245,34 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
             lines[i].style.display = "none";
             secSliderImg[i].style.display = "none";
 
+            if (window.screen.width < 600) {
+                secSlider[i].style.display = "none";
+                sliderText[i].style.display = "none";
+                lines[i].style.display = "none";
+                secSliderImg[i].style.display = "none";
+                sliderTextMobile[i].style.display = "none";
+                linesMobile[i].style.display = "none";
+
+
+
+            }
+
         }
         sliderText[slideNo].style.display = "block";
         lines[slideNo].style.display = "block";
         secSliderImg[slideNo].style.display = "block";
+        if (window.screen.width < 600) {
+
+            secSlider[slideNo].style.display = "none";
+            sliderText[slideNo].style.display = "none";
+            lines[slideNo].style.display = "none";
+            sliderTextMobile[slideNo].style.display = "block";
+            linesMobile[slideNo].style.display = "block";
+
+
+
+
+        }
 
     }
 
@@ -251,11 +284,17 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
     document.getElementById("apt").addEventListener("click", apt);
     document.getElementById("pro").addEventListener("click", pro);
 
-
     function apt() {
         sliNo = 0;
         sli(sliNo);
-        if (window.screen.width <= 500) { lines[0].style.display = "none"; }
+        if (window.screen.width <= 500) {
+            lines[0].style.display = "none";
+            secSliderMobile[0].style.display = "block";
+            secSliderMobile[1].style.display = "none";
+            linesMobile[0].style.display = "block";
+            sliderTextMobile[0].style.display = "block";
+
+        }
         for (l of lines) { l.style.display = "none"; }
         lines[0].style.display = "block";
         secSliderImg[0].style.display = "block";
@@ -265,6 +304,12 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
     function pro() {
         sliNo = 1;
         sli(sliNo);
+        if (window.screen.width <= 500) {
+            secSliderMobile[1].style.display = "block";
+            secSliderMobile[0].style.display = "none";
+            linesMobile[3].style.display = "block";
+            sliderTextMobile[3].style.display = "block";
+        }
         for (l of lines) { l.style.display = "none"; }
         lines[3].style.display = "block";
         secSliderImg[3].style.display = "block";
@@ -295,6 +340,8 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
                 clgt[i].style.display = "none";
                 cll[i].style.display = "none";
                 clgl[i].style.display = "none";
+                sl[i].style.display = "none";
+                secSliderMobile[i].style.display = "none";
 
 
             }
@@ -315,6 +362,9 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
             clgt[l].style.display = "none";
             cll[l].style.display = "none";
             clgl[l].style.display = "none";
+            sl[l].style.display = "none";
+            sl[l].children[1].children[0].children[0].style.display = "none";
+            secSliderMobile[l].style.display = "none";
 
         }
 
@@ -325,7 +375,7 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
 
 } else if (title == "Özellikler") {
     //özellikler sayfası js
-    var id = window.location.href.slice(length-1);
+    var id = window.location.href.slice(length - 1);
     var icons = document.getElementsByName("icon");
     var boxes = document.getElementsByClassName("icons");
     var outlines = document.getElementsByClassName("outlines");
@@ -506,22 +556,20 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
 
 
 
-    if(window.location.href.includes("id")){
-        _id=parseInt(id);
-        if(_id <=2){
+    if (window.location.href.includes("id")) {
+        _id = parseInt(id);
+        if (_id <= 2) {
             sliderOne();
-            if(_id===0){outlineOne();}
-            else if(_id===1){outlineTwo();}
-            else if(_id===2){outlineThr();}
+            if (_id === 0) { outlineOne(); } else if (_id === 1) { outlineTwo(); } else if (_id === 2) { outlineThr(); }
 
-        }else if (_id >2 && _id<=5 ){
+        } else if (_id > 2 && _id <= 5) {
             sliderTwo();
-            if(_id===3){outlineFt();}
-            if(_id===4){outlineFv();}
-            if(_id===5){outlineSt();}
+            if (_id === 3) { outlineFt(); }
+            if (_id === 4) { outlineFv(); }
+            if (_id === 5) { outlineSt(); }
 
         }
-        if(_id >5){window.location.href="localhost:8000";}/* teste atarken değişecek */
+        if (_id > 5) { window.location.href = "localhost:8000"; } /* teste atarken değişecek */
     }
 
 }
