@@ -2466,7 +2466,7 @@ h3 {
         background: #95B561;
         position: absolute;
         border-radius: 13px;
-        margin-left: 8%;
+        margin-left: 6.5%;
     }
     .sec-slider-innertext,
     .sec-slider-innertext-mobile {
@@ -2479,7 +2479,7 @@ h3 {
     }
     .sec-slider-text p,
     .sec-slider-innertext-mobile p {
-        font-size: 10px;
+        font-size: 13px;
         width: 90%;
     }
     .sec-slider-innertext .sec-slider-text a,
