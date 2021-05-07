@@ -201,7 +201,7 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
             try {
 
                 if (window.screen.width < 600) { var tr = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.children[i].children[0].children[0]; } else { var tr = e.target.parentElement.parentElement.parentElement.parentElement.children[i].children[0].children[0]; }
-                console.log(tr);
+
                 if (tr.style.color != "grey" && tr.id == "apt") {
 
                     if (e.target.id == "yonetim") {
@@ -227,7 +227,7 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
                     (showSecSlide(slideNo));
                 }
             } catch (TypeError) {
-                console.log(TypeError);
+
             }
 
         }
@@ -278,11 +278,14 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
 
 
     var sl = document.getElementsByName("sec-slider");
-
+    var fi = document.getElementById("fi");
 
     var sliNo = 0;
+
     document.getElementById("apt").addEventListener("click", apt);
     document.getElementById("pro").addEventListener("click", pro);
+    document.getElementsByClassName("fa-angle-down")[0].addEventListener("click", apt);
+    document.getElementsByClassName("fa-angle-down")[1].addEventListener("click", pro);
 
     function apt() {
         sliNo = 0;
@@ -293,6 +296,7 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
             secSliderMobile[1].style.display = "none";
             linesMobile[0].style.display = "block";
             sliderTextMobile[0].style.display = "block";
+
 
         }
         for (l of lines) { l.style.display = "none"; }
@@ -364,7 +368,7 @@ if (title == "Yönetişim: Apartman Site Yönetim Yazılımı") {
             clgl[l].style.display = "none";
             sl[l].style.display = "none";
             sl[l].children[1].children[0].children[0].style.display = "none";
-            secSliderMobile[l].style.display = "none";
+            secSliderMobile[l].style.display = "block";
 
         }
 
