@@ -2248,7 +2248,7 @@ h3 {
         margin: 0px auto;
         box-sizing: border-box;
         width: 100%;
-        height: 300px;
+        height: 200px;
         overflow: hidden;
     }
     .slider .slayt img {
@@ -2259,7 +2259,7 @@ h3 {
     .slayt {
         position: relative;
         width: 100%;
-        height: 305px;
+        height: 200px;
     }
     .slider-text {
         position: relative;
@@ -2447,7 +2447,7 @@ h3 {
     }
     .box,
     .box-mobile {
-        width: 32%;
+        width: 31%;
         left: 0;
         margin-left: 4px;
         box-shadow: 0px 1.06415px 10.6415px rgba(209, 209, 209, 0.5);
