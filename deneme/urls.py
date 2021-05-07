@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django import views
 from django.conf.urls import url
-from django.urls import path
+
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+
 from django.views import defaults as default_views
 from django.views.generic import RedirectView, TemplateView
 from sss import views
@@ -26,8 +27,8 @@ from sss import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
-    url(r'^', TemplateView.as_view(template_name='index.html'), name='index'),
-    path('hakkimizda/', views.hakkimizda, name='hakkimizda'),
+    url(r'^', views.index, name='index'),
+    url(r'^hakkimizda/', views.hakkimizda, name='hakkimizda'),
     
 
 ]
