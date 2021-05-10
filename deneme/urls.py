@@ -27,8 +27,8 @@ from sss import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     
-    url(r'^', views.index, name='index'),
-    url(r'^hakkimizda/', views.hakkimizda, name='hakkimizda'),
+    url(r'^', views.kvkk, name='index'),
+    
     
 
 ]
