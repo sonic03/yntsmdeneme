@@ -24,8 +24,11 @@
         @media (min-width: 350px) and (max-width: 767px){
             .us {
                 margin-top: 2%;
-                height: fit-content;
-}
+                height: 100%;
+                height: -moz-available;          /* WebKit-based browsers will ignore this. */
+                height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+                height: fill-available;
+                }
         }
 
     </style>
