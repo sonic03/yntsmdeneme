@@ -7,3 +7,6 @@ def hakkimizda(request):
 
 def index(request):
     return render (request, "index.html")
+
+def kvkk(request):
+    return render(request,"kvkk.html")
