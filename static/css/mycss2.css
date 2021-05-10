@@ -2940,7 +2940,7 @@ h3 {
     }
     .us {
         margin-top: 2%;
-        height: auto !important;
+        height: fit-content !important;
     }
     .us p {
         font-size: 15px;
