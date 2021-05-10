@@ -534,7 +534,8 @@
     height: 464px;
 }
 
-.box-column-line.box-column-line-mobile {
+.box-column-line,
+.box-column-line-mobile {
     width: 131px;
     height: 5px;
     top: 40px;
