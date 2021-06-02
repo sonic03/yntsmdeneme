@@ -129,40 +129,34 @@ input[type=checkbox]:checked +.custom-checkbox{
                             {% csrf_token %}
                             <div class="form-out ta " style="padding-top:24px">
                                 <div class="col-md-12 input-h">
-                                    <label for="{{ form.ad.name }}">{{ form.ad.label }}</label>
-                                    {% comment %}<input type="text" id="name" name="name">{% endcomment %}
-                                    {{ form.ad }}
+                                    <label for="ad">Ad Soyad</label>
+                                    
+                                    <input type="text" name="ad" maxlength="255" required id="id_ad" />
                                 </div>
                                 <div class="col-md-12 input-h">
-                                    <label for="{{ form.phone.name }}">{{ form.phone.label }}</label>
-                                    {{ form.phone }}
+                                    <label for="phone">Telefon Numarası</label>
+                                    <input type="text" name="phone" maxlength="11" required id="id_phone" />
 
                                 </div>
                                 <div class="col-md-12 input-h">
 
-                                    <label for="{{ form.email.name }}">{{ form.email.label }}</label>
-                                    {{form.email}}
+                                    <label for="email">E-posta</label>
+                                    <input type="email" name="email" maxlength="255" required id="id_email" />
                                 </div>
-                                <div class="col-md-12 input-h">
-                                    <label for="{{ form.built.name }}">{{ form.built.label }}</label>
-                                    {{ form.built }}
-
-                                </div>
-                                {% comment %}<div class="col-md-12 input-h">
-                                    <label for="{{ form.konu.name }}">{{ form.konu.label }}</label>
-                                    {{ form.konu }}
-
-                                </div>{% endcomment %}
+                                
                                 <div class="col-md-12">
-                                    <label for="{{ form.msg.name }}">{{ form.msg.label }}</label>
-                                    {{form.msg}}
+                                    <label for="msg">Mesaj</label>
+                                    <textarea name="msg" cols="40" rows="10" required id="id_msg"></textarea>
                                 </div>
-                                 <div class="col-md-12">
+                                <div class="col-md-12">
                                     <div class="checkbox-in">
-                                        {{form.is_accept}}
+                                        <input type="checkbox" name="is_accept" required id="id_is_accept" />
                                     <span class="custom-checkbox"></span>
                                         <p style="float:left;"><span id="modalticariopen" style="text-decoration:underline;cursor: pointer;" >Ticari elektronik ileti</span> almayı onaylıyorum.</p>
                                     </div>
+
+
+
                                 </div>
                                 <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                                 <div class="col-md-12 ps">
