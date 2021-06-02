@@ -534,8 +534,7 @@
     height: 464px;
 }
 
-.box-column-line,
-.box-column-line-mobile {
+.box-column-line.box-column-line-mobile {
     width: 131px;
     height: 5px;
     top: 40px;
@@ -1535,7 +1534,7 @@ h4 {
 
 .title {
     width: 100%;
-    height: auto;
+    height: -webkit-fill-available;
     font-style: normal !important;
     font-weight: 900 !important;
     font-size: 50px !important;
@@ -1804,7 +1803,7 @@ label {
     font-style: normal !important;
     font-weight: normal !important;
     font-size: 20px !important;
-    z-index: 9999;
+    z-index: 9999!important;
 }
 
 .input-h {
@@ -2941,7 +2940,7 @@ h3 {
     }
     .us {
         margin-top: 2%;
-        height: fit-content !important;
+        height: -webkit-fill-available;
     }
     .us p {
         font-size: 15px;
@@ -3025,7 +3024,7 @@ h3 {
         font-style: normal;
         font-weight: normal;
         font-size: 14px !important;
-        z-index: 999999;
+        z-index: 999999!important;
     }
     input[type=text],
     input[type=password],
