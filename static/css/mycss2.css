@@ -3048,6 +3048,8 @@ h3 {
         padding-top: 30px;
         resize: none;
         text-align: start;
+        overflow: hidden!important;
+        position: static !important;
     }
     .mc {
         margin-top: 1%;
